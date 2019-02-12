@@ -7,7 +7,7 @@
 
 extern void loop();
 volatile uint8_t brightness[8];
-volatile uint8_t pinstates[20];	// not needed in C, just can't get initialization working in ASM
+volatile uint8_t pinstates[64];	// not needed in C, just can't get initialization working in ASM. size is larger than needed
 
 extern void i2c_init(uint8_t address);
 

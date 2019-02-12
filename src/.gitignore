@@ -1,4 +1,3 @@
-tables.h
 *.elf
 *.hex
 loop.S

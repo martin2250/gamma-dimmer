@@ -1,6 +1,6 @@
 DEVICE     = atmega8a
 CLOCK      = 20000000
-ADARGS     = -c usbtiny -B 10 -p m8
+ADARGS     = -c usbtiny -B 6 -p m8
 
 main.hex: main.elf
 	rm -f main.hex
@@ -31,3 +31,5 @@ reset:
 clean:
 	rm -f main.hex
 	rm -f main.elf
+	rm -f loop.S
+	rm -f get_state.S
